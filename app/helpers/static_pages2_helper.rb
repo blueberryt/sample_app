@@ -1,2 +1,0 @@
-module StaticPages2Helper
-end
