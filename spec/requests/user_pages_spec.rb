@@ -4,7 +4,7 @@ describe "User pages" do
 
   subject { page }
 
-  describe "sign up" do
+  describe "signup" do
     before { visit signup_path }
     let(:submit) { "Create my account" }
     describe "with invalid information" do
