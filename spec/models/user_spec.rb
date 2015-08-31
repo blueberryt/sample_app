@@ -15,6 +15,9 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should be_valid }
 
+  it { should respond_to(:admin) }
+  it { should respond_to(:microposts) }
+
 
   describe "remember token" do
     before { @user.save }
