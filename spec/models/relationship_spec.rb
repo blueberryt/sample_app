@@ -26,4 +26,25 @@ describe Relationship do
     before { relationship.follower_id = nil }
     it { should_not be_valid }
   end
+
+  #describe "following" do
+  #  let(:other_user) { FactoryGirl.create(:user) }
+  #  before do
+  #    @user.save
+  #    @user.follow!(other_user)
+  #    other_user.follow!(@user)
+  #  end
+
+  #  it { should be_following(other_user) }
+  #  its(:followed_users) { should include(other_user) }
+
+  #  it "should destroy associated followed_users and followers" do
+  #    @user.destroy
+  #    @user.relationships.present?.should be_false
+  #    @user.reverse_relationships.present?.should be_false
+
+  #    expect(other_user.followers).not_to include(@user)
+  #    expect(other_user.followed_users).not_to include(@user)
+  #  end
+  #end
 end
